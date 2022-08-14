@@ -43,7 +43,10 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
   int aux;
   //Voltear el arreglo
   for (;i < n/2;i++){
-    
+    aux = a[i];
+    a[i] = a[n-i-1];
+    a[n] = aux;
+    *suma = sumaN(a,m); 
   }
   
   
