@@ -207,3 +207,22 @@ exercises.c:41:7: error: variable ‘cont’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 6cfcb35
+Sun 14 Aug 2022 07:28:09 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:50:19: error: passing argument 1 of ‘sumaN’ makes pointer from integer without a cast [-Werror=int-conversion]
+   50 |   *suma= sumaN(aux[n],m);
+      |                ~~~^~~
+      |                   |
+      |                   int
+exercises.c:22:15: note: expected ‘int *’ but argument is of type ‘int’
+   22 | int sumaN(int a[], int N) {
+      |           ~~~~^~~
+exercises.c:41:7: error: variable ‘cont’ set but not used [-Werror=unused-but-set-variable]
+   41 |   int cont, i;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ba3bdc1
