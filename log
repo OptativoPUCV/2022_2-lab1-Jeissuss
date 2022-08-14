@@ -712,3 +712,25 @@ exercises.c:75:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 8d316e9
+Sun 14 Aug 2022 09:26:22 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:17: error: format ‘%d’ expects argument of type ‘int *’, but argument 4 has type ‘int’ [-Werror=format=]
+   71 |   scanf("%s %s %d",p->nombre,p->rut,p->edad);
+      |                ~^                   ~~~~~~~
+      |                 |                    |
+      |                 int *                int
+exercises.c:73:11: error: ‘Persona’ has no member named ‘Persona’
+   73 |   return p->Persona;
+      |           ^~
+exercises.c:71:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   71 |   scanf("%s %s %d",p->nombre,p->rut,p->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:74:1: error: control reaches end of non-void function [-Werror=return-type]
+   74 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+7b7778c

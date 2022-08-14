@@ -70,8 +70,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
   Persona* p =(Persona*)malloc(sizeof(Persona));
   scanf("%s %s %d",p->nombre,p->rut,p->edad);
   
-  
-  return *p;
+  return p->Persona;
 }
 
 /*
