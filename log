@@ -1035,3 +1035,40 @@ exercises.c:75:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 b23edda
+Sun 14 Aug 2022 09:43:22 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:74:10: error: expected expression before ‘Persona’
+   74 |   return Persona->p;
+      |          ^~~~~~~
+exercises.c: In function ‘asignarValor’:
+exercises.c:100:3: error: variable-sized object may not be initialized
+  100 |   Vector v[i]=valor;
+      |   ^~~~~~
+exercises.c:100:10: error: ‘v’ redeclared as different kind of symbol
+  100 |   Vector v[i]=valor;
+      |          ^
+exercises.c:99:28: note: previous definition of ‘v’ was here
+   99 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:100:10: error: unused variable ‘v’ [-Werror=unused-variable]
+  100 |   Vector v[i]=valor;
+      |          ^
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   71 |   scanf("%s ",p->nombre);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+exercises.c:72:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   72 |   scanf("%s ",p->rut);
+      |   ^~~~~~~~~~~~~~~~~~~
+exercises.c:73:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   73 |   scanf("%i",&p->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~
+exercises.c:75:1: error: control reaches end of non-void function [-Werror=return-type]
+   75 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+22d1be5
