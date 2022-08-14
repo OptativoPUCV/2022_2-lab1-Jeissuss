@@ -39,13 +39,13 @@ Utilice la función sumaN.
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
   int i;
+  int clon;
   i=0;
-  int aux;
   //Voltear el arreglo
   for (;i < n/2;i++){
-    aux = a[i];
+    clon = a[i];
     a[i] = a[n-i-1];
-    a[n] = aux;
+    a[n-i-1] = clon;
     *suma = sumaN(a,m); 
   }
   
