@@ -502,3 +502,13 @@ exercises.c:71:22: error: ‘i’ undeclared (first use in this function)
 exercises.c:71:22: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 4898d50
+Sun 14 Aug 2022 09:05:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:25: error: request for member ‘Persona’ in something not a structure or union
+   71 |   scanf("%c",&nombre[30].Persona);
+      |                         ^
+Compilation failed
+03018fa
