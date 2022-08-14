@@ -338,3 +338,14 @@ exercises.c:70:18: error: unused variable ‘p’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 f997c07
+Sun 14 Aug 2022 08:53:28 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:16: error: ‘persona’ undeclared (first use in this function)
+   71 |   scanf("%[]", persona.nombre);
+      |                ^~~~~~~
+exercises.c:71:16: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+0ad9928
