@@ -304,3 +304,14 @@ exercises.c:49:10: error: ‘aux’ is used uninitialized in this function [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 8672518
+Sun 14 Aug 2022 08:41:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:43:7: error: unused variable ‘aux’ [-Werror=unused-variable]
+   43 |   int aux;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+7aef573
