@@ -1238,3 +1238,41 @@ exercises.c:73:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 cb46f15
+Sun 14 Aug 2022 09:55:54 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:91:8: error: unused variable ‘v’ [-Werror=unused-variable]
+   91 |   int* v[n];
+      |        ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:101:3: error: variable-sized object may not be initialized
+  101 |   Vector v[i]=valor;
+      |   ^~~~~~
+exercises.c:101:10: error: ‘v’ redeclared as different kind of symbol
+  101 |   Vector v[i]=valor;
+      |          ^
+exercises.c:100:28: note: previous definition of ‘v’ was here
+  100 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:101:10: error: unused variable ‘v’ [-Werror=unused-variable]
+  101 |   Vector v[i]=valor;
+      |          ^
+exercises.c: In function ‘sumaV’:
+exercises.c:120:5: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  120 | *c=a+b;
+      |     ^
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   71 |   scanf("%s ",p->nombre);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+exercises.c:72:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   72 |   scanf("%s ",p->rut);
+      |   ^~~~~~~~~~~~~~~~~~~
+exercises.c:73:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   73 |   scanf("%i",&p->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f12372e
