@@ -690,3 +690,25 @@ exercises.c:71:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 3677324
+Sun 14 Aug 2022 09:23:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:17: error: format ‘%d’ expects argument of type ‘int *’, but argument 4 has type ‘int’ [-Werror=format=]
+   71 |   scanf("%s %s %d",p->nombre,p->rut,p->edad);
+      |                ~^                   ~~~~~~~
+      |                 |                    |
+      |                 int *                int
+exercises.c:74:10: error: incompatible types when returning type ‘Persona’ but ‘Persona *’ was expected
+   74 |   return *p;
+      |          ^~
+exercises.c:71:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   71 |   scanf("%s %s %d",p->nombre,p->rut,p->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:75:1: error: control reaches end of non-void function [-Werror=return-type]
+   75 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8d316e9
