@@ -349,3 +349,17 @@ exercises.c:71:16: error: ‘persona’ undeclared (first use in this function)
 exercises.c:71:16: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 0ad9928
+Sun 14 Aug 2022 08:53:36 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:12: error: no closing ‘]’ for ‘%[’ format [-Werror=format=]
+   71 |   scanf("%[]", nombre);
+      |            ^
+exercises.c:71:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   71 |   scanf("%[]", nombre);
+      |   ^~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+00a3c37
