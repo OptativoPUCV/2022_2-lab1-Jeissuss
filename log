@@ -398,3 +398,20 @@ exercises.c:70:18: error: unused variable ‘p’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 83aac93
+Sun 14 Aug 2022 08:57:44 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:70:18: error: storage size of ‘p’ isn’t known
+   70 |   struct Persona p;
+      |                  ^
+exercises.c:71:16: error: expected expression before ‘Persona’
+   71 |   scanf("%[]", Persona.nombre);
+      |                ^~~~~~~
+exercises.c:70:18: error: unused variable ‘p’ [-Werror=unused-variable]
+   70 |   struct Persona p;
+      |                  ^
+cc1: all warnings being treated as errors
+Compilation failed
+02ce0b5
