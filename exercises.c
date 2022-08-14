@@ -88,6 +88,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
+  Vector[n];
    return NULL;
 }
 
