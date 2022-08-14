@@ -42,7 +42,7 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
   cont=n;
   temp=0;
   
-  int* aux =malloc(n*sizeof(int));
+  aux =(int *)malloc(n*sizeof(int));
   //Intentando voltear el arreglo
   while(cont < n/2){
     temp = a[cont];
@@ -50,7 +50,7 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
     a[n - 1 - cont] = temp;
     cont++;
   }
-  a[n]=aux[n];
+  
   *suma= sumaN(a,m);
 }
 

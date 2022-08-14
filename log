@@ -164,3 +164,14 @@ Sun 14 Aug 2022 07:18:14 PM UTC:
  tests:  1|6
 total_score: 10/70
 9b55baf
+Sun 14 Aug 2022 07:21:21 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:45:3: error: ‘aux’ undeclared (first use in this function)
+   45 |   aux =(int *)malloc(n*sizeof(int));
+      |   ^~~
+exercises.c:45:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+9913527
