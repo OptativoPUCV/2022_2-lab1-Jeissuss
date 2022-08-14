@@ -12,7 +12,8 @@ y en c almacena el valor de la suma de a más b.
 */
 
 void suma(int a, int b, int * c) {
-    
+  scanf("%d %d", &a ,&b);
+  *c= a + b;  
 }
 
 /*
@@ -37,7 +38,18 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-
+  int cont, temp;
+  cont=n;
+  temp=0;
+  
+  int* aux =malloc(n*sizeof(int));
+  
+  while(cont < n/2){
+    temp = a[cont];
+    aux[cont] = a[n - 1 - cont];
+    a[n - 1 - cont] = temp;
+    cont++;
+    }
 }
 
 /*
