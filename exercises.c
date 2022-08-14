@@ -43,14 +43,14 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
   temp=0;
   
   int* aux =malloc(n*sizeof(int));
-  
+  //Intentando voltear el arreglo
   while(cont < n/2){
     temp = a[cont];
     aux[cont] = a[n - 1 - cont];
     a[n - 1 - cont] = temp;
     cont++;
   }
-  sumaN(aux,m);
+  *suma= sumaN(aux,m);
 }
 
 /*
@@ -68,7 +68,8 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   return NULL;
+  
+  return NULL;
 }
 
 /*
