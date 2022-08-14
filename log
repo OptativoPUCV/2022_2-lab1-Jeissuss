@@ -326,3 +326,15 @@ Sun 14 Aug 2022 08:45:42 PM UTC:
  tests:  2|5
 total_score: 20/70
 8877deb
+Sun 14 Aug 2022 08:52:29 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:70:18: error: storage size of ‘p’ isn’t known
+   70 |   struct persona p;
+      |                  ^
+exercises.c:70:18: error: unused variable ‘p’ [-Werror=unused-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+f997c07
