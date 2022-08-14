@@ -49,7 +49,8 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
     aux[cont] = a[n - 1 - cont];
     a[n - 1 - cont] = temp;
     cont++;
-    }
+  }
+  sumaN()
 }
 
 /*
