@@ -181,3 +181,29 @@ Sun 14 Aug 2022 07:21:41 PM UTC:
  tests:  1|6
 total_score: 10/70
 63efbda
+Sun 14 Aug 2022 07:27:54 PM UTC: 
+ exercises.c | 14 +++++---------
+ 1 file changed, 5 insertions(+), 9 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:46:10: error: statement with no effect [-Werror=unused-value]
+   46 |   for (i < n;i++){
+      |        ~~^~~
+exercises.c:46:17: error: expected ‘;’ before ‘)’ token
+   46 |   for (i < n;i++){
+      |                 ^
+      |                 ;
+exercises.c:50:19: error: passing argument 1 of ‘sumaN’ makes pointer from integer without a cast [-Werror=int-conversion]
+   50 |   *suma= sumaN(aux[n],m);
+      |                ~~~^~~
+      |                   |
+      |                   int
+exercises.c:22:15: note: expected ‘int *’ but argument is of type ‘int’
+   22 | int sumaN(int a[], int N) {
+      |           ~~~~^~~
+exercises.c:41:7: error: variable ‘cont’ set but not used [-Werror=unused-but-set-variable]
+   41 |   int cont, i;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6cfcb35

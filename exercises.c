@@ -38,20 +38,16 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-  int cont, temp;
+  int cont, i;
   cont=n;
-  temp=0;
-  
+  i=0;
   int* aux =(int *)malloc(n*sizeof(int));
   //Intentando voltear el arreglo
-  while(cont < n/2){
-    temp = a[cont];
-    aux[cont] = a[n - 1 - cont];
-    a[n - 1 - cont] = temp;
-    cont++;
+  for (i < n;i++){
+    aux[i]=a[n-i];
   }
   
-  *suma= sumaN(a,m);
+  *suma= sumaN(aux[n],m);
 }
 
 /*
