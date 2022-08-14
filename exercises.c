@@ -68,8 +68,8 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
   Persona* p =(Persona*)malloc(sizeof(Persona));
-  scanf("%s ",&p.nombre);
-  scanf("%s ",&p.rut);
+  scanf("%s ",p->nombre);
+  scanf("%s ",p->rut);
   scanf("%i",&p.edad);
   return NULL;
 }

@@ -1555,3 +1555,37 @@ exercises.c:122:14: error: invalid operands to binary + (have ‘Vector’ and �
 cc1: all warnings being treated as errors
 Compilation failed
 738b3dc
+Sun 14 Aug 2022 10:12:54 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:73:16: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   73 |   scanf("%i",&p.edad);
+      |                ^
+      |                ->
+exercises.c: In function ‘crearVector’:
+exercises.c:91:8: error: unused variable ‘v’ [-Werror=unused-variable]
+   91 |   int* v[n];
+      |        ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:101:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  101 |   v[i]=valor;
+      |        ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:122:14: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  122 |     c[i]=a[i]+b[i];
+      |          ~~~~^~~~~
+      |           |    |
+      |           |    Vector
+      |           Vector
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   71 |   scanf("%s ",p->nombre);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+exercises.c:72:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   72 |   scanf("%s ",p->rut);
+      |   ^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ee48cd8
