@@ -41,9 +41,9 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
   int i;
   i=0;
   int aux;
-  //Intentando voltear el arreglo
-  for (;i < n;i++){
-    aux[i]=a[n-i];
+  //Voltear el arreglo
+  for (;i < n/2;i++){
+    
   }
   
   *suma= sumaN(aux,m);
