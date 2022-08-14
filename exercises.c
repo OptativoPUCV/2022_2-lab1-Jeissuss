@@ -40,7 +40,7 @@ Utilice la función sumaN.
 void sumaNultimos(int a[], int n, int m, int * suma) {
   int i;
   i=0;
-  int* aux =(int *)malloc(n*sizeof(int));
+  int aux;
   //Intentando voltear el arreglo
   for (;i < n;i++){
     aux[i]=a[n-i];
@@ -64,7 +64,7 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-  
+  scanf("%[\n]", nombre);
   return NULL;
 }
 

@@ -243,3 +243,26 @@ Sun 14 Aug 2022 07:28:53 PM UTC:
  tests:  1|6
 total_score: 10/70
 cd061a3
+Sun 14 Aug 2022 08:40:31 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:46:8: error: subscripted value is neither array nor pointer nor vector
+   46 |     aux[i]=a[n-i];
+      |        ^
+exercises.c:49:16: error: passing argument 1 of ‘sumaN’ makes pointer from integer without a cast [-Werror=int-conversion]
+   49 |   *suma= sumaN(aux,m);
+      |                ^~~
+      |                |
+      |                int
+exercises.c:22:15: note: expected ‘int *’ but argument is of type ‘int’
+   22 | int sumaN(int a[], int N) {
+      |           ~~~~^~~
+exercises.c: In function ‘crearPersona’:
+exercises.c:67:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   67 |   scanf("%[\n]", nombre);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+83a1e69
