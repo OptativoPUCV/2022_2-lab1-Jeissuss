@@ -460,3 +460,13 @@ exercises.c:71:27: error: expected expression before ‘Persona’
       |                           ^~~~~~~
 Compilation failed
 9b08a0c
+Sun 14 Aug 2022 09:02:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:26: error: request for member ‘Persona’ in something not a structure or union
+   71 |   scanf("%c", &nombre[30].Persona);
+      |                          ^
+Compilation failed
+38b0584
