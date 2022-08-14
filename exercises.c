@@ -118,7 +118,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
   
-  c[1,2,3]=a[1,2,3]+b[1,2,3];
+  c[]=a+b;
   
 }
 
