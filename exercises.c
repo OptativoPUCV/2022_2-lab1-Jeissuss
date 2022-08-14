@@ -38,8 +38,7 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-  int cont, i;
-  cont=n;
+  int i;
   i=0;
   int* aux =(int *)malloc(n*sizeof(int));
   //Intentando voltear el arreglo

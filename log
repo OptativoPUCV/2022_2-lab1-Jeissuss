@@ -237,3 +237,9 @@ exercises.c:41:7: error: variable ‘cont’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 42347f5
+Sun 14 Aug 2022 07:28:53 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  1|6
+total_score: 10/70
+cd061a3
