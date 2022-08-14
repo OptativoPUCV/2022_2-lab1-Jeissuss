@@ -226,3 +226,14 @@ exercises.c:41:7: error: variable ‘cont’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 ba3bdc1
+Sun 14 Aug 2022 07:28:24 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:41:7: error: variable ‘cont’ set but not used [-Werror=unused-but-set-variable]
+   41 |   int cont, i;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+42347f5
