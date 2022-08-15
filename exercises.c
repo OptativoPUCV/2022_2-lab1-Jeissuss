@@ -134,3 +134,4 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   c->datos[0]=a1 + b1;
   c->datos[1]=a2 + b2;
 }
+free;
