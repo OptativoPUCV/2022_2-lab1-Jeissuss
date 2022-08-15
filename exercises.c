@@ -41,7 +41,7 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
   int i;
   int clon;
   i=0;
-  //Voltear el arreglo
+  //Voltear el arreglo copiando el contenido de un arreglo en otro
   for (;i < n/2;i++){
     clon = a[i];
     a[i] = a[n-i-1];
@@ -100,7 +100,7 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-  //Esta parte me dio problemas en todo el codigo
+  //¡Esta parte me dio problemas en todo el codigo! 
   v->datos[i]=valor;
 
 }
