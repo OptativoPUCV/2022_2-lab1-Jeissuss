@@ -2083,3 +2083,42 @@ exercises.c:93:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 5f66807
+Mon 15 Aug 2022 01:31:17 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:91:12: error: unused variable ‘v’ [-Werror=unused-variable]
+   91 |   Vector * v = (Vector *)malloc(n*sizeof(Vector));
+      |            ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:101:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  101 |   v[i]=valor;
+      |        ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:122:14: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  122 |     c[i]=a[i]+b[i];
+      |          ~~~~^~~~~
+      |           |    |
+      |           |    Vector
+      |           Vector
+exercises.c: In function ‘sumaV2’:
+exercises.c:132:1: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  132 | *c[0]=a1[0]+b[0];
+      | ^~~~~
+exercises.c:132:9: error: subscripted value is neither array nor pointer nor vector
+  132 | *c[0]=a1[0]+b[0];
+      |         ^
+exercises.c:132:13: error: ‘b’ undeclared (first use in this function)
+  132 | *c[0]=a1[0]+b[0];
+      |             ^
+exercises.c:132:13: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:133:2: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  133 |  *c[1]=
+      |  ^~~~~
+exercises.c:134:1: error: expected expression before ‘}’ token
+  134 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+911414b
