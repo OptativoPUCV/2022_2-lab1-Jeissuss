@@ -2156,3 +2156,27 @@ exercises.c:136:1: error: expected expression before ‘}’ token
       | ^
 Compilation failed
 66d885a
+Mon 15 Aug 2022 01:40:38 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:103:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  103 |   v[i]=valor;
+      |        ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:124:14: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  124 |     c[i]=a[i]+b[i];
+      |          ~~~~^~~~~
+      |           |    |
+      |           |    Vector
+      |           Vector
+exercises.c: In function ‘sumaV2’:
+exercises.c:134:3: error: invalid type argument of unary ‘*’ (have ‘int’)
+  134 |   *c->datos[0]=a1 + b1;
+      |   ^~~~~~~~~~~~
+exercises.c:135:3: error: invalid type argument of unary ‘*’ (have ‘int’)
+  135 |   *c->datos[1]=a2 + b2;
+      |   ^~~~~~~~~~~~
+Compilation failed
+a7f45dd
