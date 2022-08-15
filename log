@@ -2320,3 +2320,13 @@ exercises.c:103:8: error: incompatible types when assigning to type ‘Vector’
       |        ^~~~~
 Compilation failed
 320ec3e
+Mon 15 Aug 2022 01:57:21 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:103:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  103 |   v[i]=valor;
+      |        ^~~~~
+Compilation failed
+e42cc3d
