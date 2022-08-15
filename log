@@ -1913,3 +1913,75 @@ exercises.c:93:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 00cc108
+Mon 15 Aug 2022 01:24:25 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:3: error: too few arguments to function ‘strcpy’
+   71 |   strcpy(p->nombre);
+      |   ^~~~~~
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/features.h:473,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/string_fortified.h:77:1: note: declared here
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:5:
+exercises.c:72:3: error: too few arguments to function ‘strcpy’
+   72 |   strcpy(p->rut);
+      |   ^~~~~~
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/features.h:473,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/string_fortified.h:77:1: note: declared here
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:91:3: error: ‘v’ undeclared (first use in this function)
+   91 |   v = (int*)malloc(n*sizeof(int))
+      |   ^
+exercises.c:91:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:91:34: error: expected ‘;’ before ‘return’
+   91 |   v = (int*)malloc(n*sizeof(int))
+      |                                  ^
+      |                                  ;
+   92 |    return NULL;
+      |    ~~~~~~                         
+exercises.c: In function ‘asignarValor’:
+exercises.c:101:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  101 |   v[i]=valor;
+      |        ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:122:14: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  122 |     c[i]=a[i]+b[i];
+      |          ~~~~^~~~~
+      |           |    |
+      |           |    Vector
+      |           Vector
+exercises.c: In function ‘sumaV2’:
+exercises.c:132:1: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  132 | *c[0]=a1[0]+b[0];
+      | ^~~~~
+exercises.c:132:9: error: subscripted value is neither array nor pointer nor vector
+  132 | *c[0]=a1[0]+b[0];
+      |         ^
+exercises.c:132:13: error: ‘b’ undeclared (first use in this function)
+  132 | *c[0]=a1[0]+b[0];
+      |             ^
+exercises.c:133:2: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  133 |  *c[1]=
+      |  ^~~~~
+exercises.c:134:1: error: expected expression before ‘}’ token
+  134 | }
+      | ^
+exercises.c: In function ‘crearVector’:
+exercises.c:93:1: error: control reaches end of non-void function [-Werror=return-type]
+   93 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6d1bf55
