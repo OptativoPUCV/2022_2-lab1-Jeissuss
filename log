@@ -2122,3 +2122,37 @@ exercises.c:134:1: error: expected expression before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 911414b
+Mon 15 Aug 2022 01:36:17 AM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:103:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  103 |   v[i]=valor;
+      |        ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:124:14: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  124 |     c[i]=a[i]+b[i];
+      |          ~~~~^~~~~
+      |           |    |
+      |           |    Vector
+      |           Vector
+exercises.c: In function ‘sumaV2’:
+exercises.c:134:1: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  134 | *c[0]=a1[0]+b[0];
+      | ^~~~~
+exercises.c:134:9: error: subscripted value is neither array nor pointer nor vector
+  134 | *c[0]=a1[0]+b[0];
+      |         ^
+exercises.c:134:13: error: ‘b’ undeclared (first use in this function)
+  134 | *c[0]=a1[0]+b[0];
+      |             ^
+exercises.c:134:13: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:135:2: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  135 |  *c[1]=
+      |  ^~~~~
+exercises.c:136:1: error: expected expression before ‘}’ token
+  136 | }
+      | ^
+Compilation failed
+66d885a
