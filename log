@@ -2225,3 +2225,20 @@ In file included from test.c:2:
 cc1: all warnings being treated as errors
 Compilation failed
 2d26b69
+Mon 15 Aug 2022 01:45:04 AM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:103:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  103 |   v[i]=valor;
+      |        ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:124:14: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  124 |     c[i]=a[i]+b[i];
+      |          ~~~~^~~~~
+      |           |    |
+      |           |    Vector
+      |           Vector
+Compilation failed
+3d57058
