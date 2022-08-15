@@ -42,7 +42,7 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
   int clon;
   i=0;
   //Voltear el arreglo
-  for (;i < n/2;i++){
+  for (;i < n/1;i++){
     clon = a[i];
     a[i] = a[n-i-1];
     a[n-i-1] = clon;
